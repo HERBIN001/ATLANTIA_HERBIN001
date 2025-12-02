@@ -24,17 +24,9 @@ body{
     opacity: 9.5%;
 }
 
-.content{
-    display: flex; /* coloca las tarjetas una al lado de la otra */
-    gap: 4rem; /* separar las tarjetas */
-    flex-wrap: wrap; /* permitir que las tarjetas sbajen si no caben */
-    justify-content: center;
-    padding: 2rem;
-    
-}
 
 .card{
-    background: rgba(110, 108, 108, 0.8);
+    background: rgba(151, 108, 108, 0.8);
     padding: 1.25rem;
     border-radius: 22px;
     box-shadow: 0.9px 15px rgba(112, 9, 9, 0.295);
@@ -73,3 +65,32 @@ body{
     padding: 1rem;
     margin-top: 2rem;
 }
+ .dropdown-menu
+ {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    border-radius: 4px;
+    margin-top: 2;
+ }
+ .dropdown:hover .dropdown-menu{
+    display: block;}
+    .dropdown-menu li a
+    {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        transition: brackground-color 0.2s;
+    }
+    .dropdown-menu li a:hover
+    {
+        background-color: #f1f1f1;
+    }
